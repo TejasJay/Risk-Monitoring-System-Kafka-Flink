@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚨 Blocked Customers 🚨</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚨 Blocked Customers 🚨</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Transaction Amount ($)</th>
+            </tr>
+        </thead>
+        <tbody id="blocked-customers">
+            <!-- Data will be injected here -->
+        </tbody>
+    </table>
+
+    <script>
+        function fetchBlockedCustomers() {
+            fetch("/get-blocked-customers")
+                .then(response => response.json())
+                .then(data => {
+                    let tableBody = document.getElementById("blocked-customers");
+                    tableBody.innerHTML = "";
+                    data.forEach(customer => {
+                        let row = `<tr>
+                            <td>${customer["Name"] || "Unknown"}</td>
+                            <td>$${customer["Current Transaction Amount"] ? customer["Current Transaction Amount"].toFixed(2) : "0.00"}</td>
+                        </tr>`;
+                        tableBody.innerHTML += row;
+                    });
+                })
+                .catch(error => console.error("Error fetching data:", error));
+        }
+
+        // Fetch data every 3 seconds
+        setInterval(fetchBlockedCustomers, 3000);
+        fetchBlockedCustomers();
+    </script>
+</body>
+</html>
