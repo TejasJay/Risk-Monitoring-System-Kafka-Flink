@@ -6,7 +6,7 @@ This project simulates bank transactions, detects fraudulent activities, visuali
 
 * * *
 
-## ⚙️ Architecture Flow (Detailed Mermaid Diagram)
+## ⚙️ Architecture Flow 
 
 ```mermaid
 flowchart TD
