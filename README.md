@@ -1,4 +1,4 @@
-# 🛡️ Fraud Monitoring Pipeline Documentation
+# 🛡️ Fraud Monitoring Pipeline (Kafka, Flink, Python, ElasticSearch, Kibana)
 
 ## 📂 Project Overview
 
