@@ -1,0 +1,186 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/tejasjay94/flink/lib/log4j-slf4j-impl-2.17.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hive/lib/log4j-slf4j-impl-2.17.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Mar 21, 2025 2:55:20 PM org.jline.utils.Log logr
+WARNING: Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+[34;1m[INFO] Executing SQL from file.[0m
+
+Command history file path: /home/tejasjay94/.flink-sql-history
+Flink SQL> [34;1m[INFO] Execute statement succeed.[0m
+
+Flink SQL> 
+> 
+> ------------------------------------------- MAIN TRANSACTION TABLE -------------------------------------------------
+> 
+> CREATE TABLE Transactions (
+>   `Name` STRING,
+>   `Address` STRING,
+>   `Email` STRING,
+>   `City` STRING,
+>   `State` STRING,
+>   `Country` STRING,
+>   `Phone Number` STRING,
+>   `Account Number` STRING,
+>   `IP Address` STRING,
+>   `Login Devices` ARRAY<STRING>,
+>   `Card Types` ARRAY<STRING>,
+>   `Transaction Types` ARRAY<STRING>,
+>   `Card Number` STRING,
+>   `Usual Transaction Amount` DOUBLE,
+>   `Transaction ID` STRING,
+>   `Transaction Time` TIMESTAMP(3),
+>   `Current Login Device` STRING,
+>   `Current Card Type` STRING,
+>   `Current Transaction Type` STRING,
+>   `Current Transaction Amount` DOUBLE,
+>   `Fraud Flags` STRING,
+>   WATERMARK FOR `Transaction Time` AS `Transaction Time` - INTERVAL '5' SECOND
+> ) WITH (
+>   'connector' = 'kafka',
+>   'topic' = 'bank_transactions',
+>   'properties.bootstrap.servers' = 'localhost:9092',
+>   'format' = 'json',
+>   'scan.startup.mode' = 'earliest-offset'
+> )[34;1m[INFO] Execute statement succeed.[0m
+
+Flink SQL> 
+> ------------------------------------------- FRAUD DASHBOARD -------------------------------------------------
+> 
+> CREATE TABLE IF NOT EXISTS FraudDashboard (
+>   win_start TIMESTAMP(3),
+>   `Current Login Device` STRING,
+>   fraud_count BIGINT,
+>   high_risk_count BIGINT,
+>   `Current Card Type` STRING,
+>   total_txns BIGINT,
+>   fraud_txns BIGINT,
+>   fraud_percentage DOUBLE
+> ) WITH (
+>   'connector' = 'kafka',
+>   'topic' = 'fraud_dashboard',
+>   'properties.bootstrap.servers' = 'localhost:9092',
+>   'format' = 'json',
+>   'scan.startup.mode' = 'earliest-offset'
+> )[34;1m[INFO] Execute statement succeed.[0m
+
+Flink SQL> 
+> ------------------------------------------- RISK MATRIX -------------------------------------------------
+> 
+> CREATE TABLE CustomerRisk (
+>   `Name` STRING,
+>   `Account Number` STRING,
+>   Total_Txns BIGINT,
+>   Fraud_Txns BIGINT,
+>   Avg_Amount DOUBLE,
+>   Risk_Level STRING,
+>   PRIMARY KEY (`Account Number`) NOT ENFORCED
+> ) WITH (
+>   'connector' = 'upsert-kafka',
+>   'topic' = 'customer_risk',
+>   'properties.bootstrap.servers' = 'localhost:9092',
+>   'key.format' = 'json',
+>   'value.format' = 'json'
+> )[34;1m[INFO] Execute statement succeed.[0m
+
+Flink SQL> 
+> 
+> 
+> ------------------------------------------- BLOCKED CUSTOMERS -------------------------------------------------
+> 
+> CREATE TABLE BlockedCustomers (
+>   `Name` STRING,
+>   `Account Number` STRING,
+>   `Current Transaction Amount` DOUBLE,
+>   `Transaction ID` STRING,
+>   `Transaction Time` TIMESTAMP(3),
+>   Reason STRING
+> ) WITH (
+>   'connector' = 'kafka',
+>   'topic' = 'blocked_customers',
+>   'properties.bootstrap.servers' = 'localhost:9092',
+>   'format' = 'json',
+>   'scan.startup.mode' = 'earliest-offset'
+> )[34;1m[INFO] Execute statement succeed.[0m
+
+Flink SQL> 
+> ------------------------------------------- EXECUTE STATEMENT SET -------------------------------------------------
+> 
+> EXECUTE STATEMENT SET
+> BEGIN
+> 
+>   -- Insert into FraudDashboard
+>   INSERT INTO FraudDashboard
+>   WITH
+>     fraud_by_device AS (
+>       SELECT
+>         TUMBLE_START(`Transaction Time`, INTERVAL '10' MINUTE) AS win_start,
+>         `Current Login Device`,
+>         COUNT(*) AS fraud_count
+>       FROM Transactions
+>       WHERE `Fraud Flags` <> 'No Fraud'
+>       GROUP BY TUMBLE(`Transaction Time`, INTERVAL '10' MINUTE), `Current Login Device`
+>     ),
+>     high_risk_txns AS (
+>       SELECT
+>         TUMBLE_START(`Transaction Time`, INTERVAL '10' MINUTE) AS win_start,
+>         COUNT(*) AS high_risk_count
+>       FROM Transactions
+>       WHERE `Current Transaction Amount` > 10000
+>       GROUP BY TUMBLE(`Transaction Time`, INTERVAL '10' MINUTE)
+>     ),
+>     fraud_by_card AS (
+>       SELECT
+>         TUMBLE_START(`Transaction Time`, INTERVAL '10' MINUTE) AS win_start,
+>         `Current Card Type`,
+>         COUNT(*) AS total_txns,
+>         SUM(CASE WHEN `Fraud Flags` <> 'No Fraud' THEN 1 ELSE 0 END) AS fraud_txns
+>       FROM Transactions
+>       GROUP BY TUMBLE(`Transaction Time`, INTERVAL '10' MINUTE), `Current Card Type`
+>     )
+>   SELECT
+>     fbd.win_start,
+>     fbd.`Current Login Device`,
+>     fbd.fraud_count,
+>     hrt.high_risk_count,
+>     fbc.`Current Card Type`,
+>     fbc.total_txns,
+>     fbc.fraud_txns,
+>     ROUND(fbc.fraud_txns * 100.0 / fbc.total_txns, 2) AS fraud_percentage
+>   FROM fraud_by_device fbd
+>   JOIN high_risk_txns hrt ON fbd.win_start = hrt.win_start
+>   JOIN fraud_by_card fbc ON fbd.win_start = fbc.win_start;
+> 
+>   -- Insert into CustomerRisk
+>   INSERT INTO CustomerRisk
+>   SELECT
+>     `Name`,
+>     `Account Number`,
+>     COUNT(*) AS Total_Txns,
+>     SUM(CASE WHEN `Fraud Flags` <> 'No Fraud' THEN 1 ELSE 0 END) AS Fraud_Txns,
+>     AVG(`Current Transaction Amount`) AS Avg_Amount,
+>     CASE
+>       WHEN SUM(CASE WHEN `Fraud Flags` <> 'No Fraud' THEN 1 ELSE 0 END) >= 3
+>            OR MAX(`Current Transaction Amount`) > 10000 THEN 'High Risk'
+>       WHEN SUM(CASE WHEN `Fraud Flags` <> 'No Fraud' THEN 1 ELSE 0 END) BETWEEN 1 AND 2
+>            OR AVG(`Current Transaction Amount`)WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.flink.api.java.ClosureCleaner (file:/home/tejasjay94/flink/lib/flink-dist-1.17.2.jar) to field java.lang.String.value
+WARNING: Please consider reporting this to the maintainers of org.apache.flink.api.java.ClosureCleaner
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[34;1m[INFO] Submitting SQL update statement to the cluster...[0m
+[34;1m[INFO] SQL update statement has been successfully submitted to the cluster:[0m
+Job ID: cf37cd449dcd896e25ece08dab111a52
+
+
+Flink SQL> +----+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+-------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+| op |                           Name |                        Address |                          Email |                           City |                          State |                        Country |                   Phone Number |                 Account Number |                     IP Address |                  Login Devices |                     Card Types |              Transaction Types |                    Card Number |       Usual Transaction Amount |                 Transaction ID |        Transaction Time |           Current Login Device |              Current Card Type |       Current Transaction Type |     Current Transaction Amount |                    Fraud Flags |
++----+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+-------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+[31;1m[ERROR] Could not execute SQL statement. Reason:
+org.apache.flink.runtime.jobmanager.scheduler.NoResourceAvailableException: Could not acquire the minimum required resources.
+
+End of exception on server side>][0m
+
+Shutting down the session...
+done.
