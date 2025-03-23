@@ -1,0 +1,1247 @@
+Starting Zookeeper...
+[2025-03-22 18:31:58,018] INFO Reading configuration from: /home/tejasjay94/kafka/config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2025-03-22 18:31:58,043] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2025-03-22 18:31:58,044] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2025-03-22 18:31:58,044] INFO observerMasterPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2025-03-22 18:31:58,044] INFO metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2025-03-22 18:31:58,049] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2025-03-22 18:31:58,049] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2025-03-22 18:31:58,049] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
+[2025-03-22 18:31:58,049] WARN Either no config or no quorum defined in config, running in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
+[2025-03-22 18:31:58,052] INFO Log4j 1.2 jmx support not found; jmx disabled. (org.apache.zookeeper.jmx.ManagedUtil)
+[2025-03-22 18:31:58,054] INFO Reading configuration from: /home/tejasjay94/kafka/config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2025-03-22 18:31:58,055] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2025-03-22 18:31:58,055] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2025-03-22 18:31:58,055] INFO observerMasterPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2025-03-22 18:31:58,056] INFO metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2025-03-22 18:31:58,056] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2025-03-22 18:31:58,085] INFO ServerMetrics initialized with provider org.apache.zookeeper.metrics.impl.DefaultMetricsProvider@2cbb3d47 (org.apache.zookeeper.server.ServerMetrics)
+[2025-03-22 18:31:58,091] INFO ACL digest algorithm is: SHA1 (org.apache.zookeeper.server.auth.DigestAuthenticationProvider)
+[2025-03-22 18:31:58,091] INFO zookeeper.DigestAuthenticationProvider.enabled = true (org.apache.zookeeper.server.auth.DigestAuthenticationProvider)
+[2025-03-22 18:31:58,099] INFO zookeeper.snapshot.trust.empty : false (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[2025-03-22 18:31:58,141] INFO  (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,141] INFO   ______                  _                                           (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,141] INFO  |___  /                 | |                                          (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,141] INFO     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __    (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,141] INFO    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__| (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,141] INFO   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |     (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,141] INFO  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_| (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,141] INFO                                               | |                      (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,142] INFO                                               |_|                      (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,142] INFO  (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,155] INFO Server environment:zookeeper.version=3.8.4-9316c2a7a97e1666d8f4593f34dd6fc36ecc436c, built on 2024-02-12 22:16 UTC (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,155] INFO Server environment:host.name=hadoop-master.us-central1-c.c.thermal-scene-446819-t2.internal (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,156] INFO Server environment:java.version=11.0.26 (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,156] INFO Server environment:java.vendor=Ubuntu (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,156] INFO Server environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,156] INFO Server environment:java.class.path=/home/tejasjay94/kafka/bin/../libs/activation-1.1.1.jar:/home/tejasjay94/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/tejasjay94/kafka/bin/../libs/argparse4j-0.7.0.jar:/home/tejasjay94/kafka/bin/../libs/audience-annotations-0.12.0.jar:/home/tejasjay94/kafka/bin/../libs/caffeine-2.9.3.jar:/home/tejasjay94/kafka/bin/../libs/checker-qual-3.19.0.jar:/home/tejasjay94/kafka/bin/../libs/commons-beanutils-1.9.4.jar:/home/tejasjay94/kafka/bin/../libs/commons-cli-1.4.jar:/home/tejasjay94/kafka/bin/../libs/commons-collections-3.2.2.jar:/home/tejasjay94/kafka/bin/../libs/commons-digester-2.1.jar:/home/tejasjay94/kafka/bin/../libs/commons-io-2.14.0.jar:/home/tejasjay94/kafka/bin/../libs/commons-lang3-3.12.0.jar:/home/tejasjay94/kafka/bin/../libs/commons-logging-1.2.jar:/home/tejasjay94/kafka/bin/../libs/commons-validator-1.7.jar:/home/tejasjay94/kafka/bin/../libs/connect-api-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-basic-auth-extension-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-json-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-mirror-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-mirror-client-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-runtime-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-transforms-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/error_prone_annotations-2.10.0.jar:/home/tejasjay94/kafka/bin/../libs/hk2-api-2.6.1.jar:/home/tejasjay94/kafka/bin/../libs/hk2-locator-2.6.1.jar:/home/tejasjay94/kafka/bin/../libs/hk2-utils-2.6.1.jar:/home/tejasjay94/kafka/bin/../libs/jackson-annotations-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-core-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-databind-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-dataformat-csv-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-datatype-jdk8-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-jaxrs-base-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-jaxrs-json-provider-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-module-afterburner-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-module-jaxb-annotations-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-module-scala_2.13-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/tejasjay94/kafka/bin/../libs/javassist-3.29.2-GA.jar:/home/tejasjay94/kafka/bin/../libs/javax.activation-api-1.2.0.jar:/home/tejasjay94/kafka/bin/../libs/javax.annotation-api-1.3.2.jar:/home/tejasjay94/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/home/tejasjay94/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/tejasjay94/kafka/bin/../libs/jaxb-api-2.3.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-client-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-common-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-container-servlet-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-container-servlet-core-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-hk2-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-server-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jetty-client-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-continuation-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-http-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-io-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-security-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-server-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-servlet-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-servlets-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-util-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-util-ajax-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jline-3.25.1.jar:/home/tejasjay94/kafka/bin/../libs/jopt-simple-5.0.4.jar:/home/tejasjay94/kafka/bin/../libs/jose4j-0.9.4.jar:/home/tejasjay94/kafka/bin/../libs/jsr305-3.0.2.jar:/home/tejasjay94/kafka/bin/../libs/kafka-clients-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-group-coordinator-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-group-coordinator-api-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-log4j-appender-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-metadata-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-raft-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-server-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-server-common-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-shell-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-storage-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-storage-api-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-streams-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-streams-examples-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-streams-scala_2.13-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-streams-test-utils-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-tools-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-tools-api-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-transaction-coordinator-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka_2.13-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/lz4-java-1.8.0.jar:/home/tejasjay94/kafka/bin/../libs/maven-artifact-3.9.6.jar:/home/tejasjay94/kafka/bin/../libs/metrics-core-2.2.0.jar:/home/tejasjay94/kafka/bin/../libs/metrics-core-4.1.12.1.jar:/home/tejasjay94/kafka/bin/../libs/netty-buffer-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-codec-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-common-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-handler-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-resolver-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-transport-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-transport-classes-epoll-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-transport-native-epoll-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-transport-native-unix-common-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/opentelemetry-proto-1.0.0-alpha.jar:/home/tejasjay94/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/tejasjay94/kafka/bin/../libs/paranamer-2.8.jar:/home/tejasjay94/kafka/bin/../libs/pcollections-4.0.1.jar:/home/tejasjay94/kafka/bin/../libs/plexus-utils-3.5.1.jar:/home/tejasjay94/kafka/bin/../libs/protobuf-java-3.25.5.jar:/home/tejasjay94/kafka/bin/../libs/reflections-0.10.2.jar:/home/tejasjay94/kafka/bin/../libs/reload4j-1.2.25.jar:/home/tejasjay94/kafka/bin/../libs/rocksdbjni-7.9.2.jar:/home/tejasjay94/kafka/bin/../libs/scala-collection-compat_2.13-2.10.0.jar:/home/tejasjay94/kafka/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/tejasjay94/kafka/bin/../libs/scala-library-2.13.14.jar:/home/tejasjay94/kafka/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/tejasjay94/kafka/bin/../libs/scala-reflect-2.13.14.jar:/home/tejasjay94/kafka/bin/../libs/slf4j-api-1.7.36.jar:/home/tejasjay94/kafka/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/tejasjay94/kafka/bin/../libs/snappy-java-1.1.10.5.jar:/home/tejasjay94/kafka/bin/../libs/swagger-annotations-2.2.8.jar:/home/tejasjay94/kafka/bin/../libs/trogdor-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/zookeeper-3.8.4.jar:/home/tejasjay94/kafka/bin/../libs/zookeeper-jute-3.8.4.jar:/home/tejasjay94/kafka/bin/../libs/zstd-jni-1.5.6-4.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,156] INFO Server environment:java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,156] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO Server environment:os.version=6.8.0-1025-gcp (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO Server environment:user.name=tejasjay94 (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO Server environment:user.home=/home/tejasjay94 (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO Server environment:user.dir=/home/tejasjay94/kafka_flink (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO Server environment:os.memory.free=487MB (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO Server environment:os.memory.max=512MB (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO Server environment:os.memory.total=512MB (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO zookeeper.enableEagerACLCheck = false (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,157] INFO zookeeper.digest.enabled = true (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,158] INFO zookeeper.closeSessionTxn.enabled = true (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,158] INFO zookeeper.flushDelay = 0 ms (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,158] INFO zookeeper.maxWriteQueuePollTime = 0 ms (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,158] INFO zookeeper.maxBatchSize=1000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,158] INFO zookeeper.intBufferStartingSizeBytes = 1024 (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,161] INFO Weighed connection throttling is disabled (org.apache.zookeeper.server.BlueThrottle)
+[2025-03-22 18:31:58,164] INFO minSessionTimeout set to 6000 ms (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,164] INFO maxSessionTimeout set to 60000 ms (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,166] INFO getData response cache size is initialized with value 400. (org.apache.zookeeper.server.ResponseCache)
+[2025-03-22 18:31:58,167] INFO getChildren response cache size is initialized with value 400. (org.apache.zookeeper.server.ResponseCache)
+[2025-03-22 18:31:58,168] INFO zookeeper.pathStats.slotCapacity = 60 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2025-03-22 18:31:58,169] INFO zookeeper.pathStats.slotDuration = 15 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2025-03-22 18:31:58,169] INFO zookeeper.pathStats.maxDepth = 6 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2025-03-22 18:31:58,169] INFO zookeeper.pathStats.initialDelay = 5 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2025-03-22 18:31:58,169] INFO zookeeper.pathStats.delay = 5 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2025-03-22 18:31:58,169] INFO zookeeper.pathStats.enabled = false (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2025-03-22 18:31:58,177] INFO The max bytes for all large requests are set to 104857600 (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,178] INFO The large request threshold is set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,179] INFO zookeeper.enforce.auth.enabled = false (org.apache.zookeeper.server.AuthenticationHelper)
+[2025-03-22 18:31:58,179] INFO zookeeper.enforce.auth.schemes = [] (org.apache.zookeeper.server.AuthenticationHelper)
+[2025-03-22 18:31:58,179] INFO Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /tmp/zookeeper/version-2 snapdir /tmp/zookeeper/version-2 (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,237] INFO Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory (org.apache.zookeeper.server.ServerCnxnFactory)
+[2025-03-22 18:31:58,245] WARN maxCnxns is not configured, using default value 0. (org.apache.zookeeper.server.ServerCnxnFactory)
+[2025-03-22 18:31:58,248] INFO Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 4 worker threads, and 64 kB direct buffers. (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2025-03-22 18:31:58,268] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2025-03-22 18:31:58,308] INFO Using org.apache.zookeeper.server.watch.WatchManager as watch manager (org.apache.zookeeper.server.watch.WatchManagerFactory)
+[2025-03-22 18:31:58,308] INFO Using org.apache.zookeeper.server.watch.WatchManager as watch manager (org.apache.zookeeper.server.watch.WatchManagerFactory)
+[2025-03-22 18:31:58,312] INFO zookeeper.snapshotSizeFactor = 0.33 (org.apache.zookeeper.server.ZKDatabase)
+[2025-03-22 18:31:58,312] INFO zookeeper.commitLogCount=500 (org.apache.zookeeper.server.ZKDatabase)
+[2025-03-22 18:31:58,322] INFO zookeeper.snapshot.compression.method = CHECKED (org.apache.zookeeper.server.persistence.SnapStream)
+[2025-03-22 18:31:58,417] INFO Reading snapshot /tmp/zookeeper/version-2/snapshot.aef (org.apache.zookeeper.server.persistence.FileSnap)
+[2025-03-22 18:31:58,438] INFO The digest in the snapshot has digest version of 2, with zxid as 0xaef, and digest value as 351794868885 (org.apache.zookeeper.server.DataTree)
+[2025-03-22 18:31:58,716] INFO ZooKeeper audit is disabled. (org.apache.zookeeper.audit.ZKAuditProvider)
+[2025-03-22 18:31:58,808] INFO 381 txns loaded in 270 ms (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[2025-03-22 18:31:58,808] INFO Snapshot loaded in 495 ms, highest zxid is 0xc6c, digest is 376911286439 (org.apache.zookeeper.server.ZKDatabase)
+[2025-03-22 18:31:58,810] INFO Snapshotting: 0xc6c to /tmp/zookeeper/version-2/snapshot.c6c (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[2025-03-22 18:31:58,816] INFO Snapshot taken in 6 ms (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:31:58,837] INFO PrepRequestProcessor (sid:0) started, reconfigEnabled=false (org.apache.zookeeper.server.PrepRequestProcessor)
+[2025-03-22 18:31:58,838] INFO zookeeper.request_throttler.shutdownTimeout = 10000 ms (org.apache.zookeeper.server.RequestThrottler)
+[2025-03-22 18:31:58,867] INFO Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0 (org.apache.zookeeper.server.ContainerManager)
+Starting Kafka Broker...
+[2025-03-22 18:32:13,607] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2025-03-22 18:32:14,765] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+[2025-03-22 18:32:14,774] INFO RemoteLogManagerConfig values: 
+	log.local.retention.bytes = -2
+	log.local.retention.ms = -2
+	remote.fetch.max.wait.ms = 500
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.copier.thread.pool.size = 10
+	remote.log.manager.copy.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.copy.quota.window.num = 11
+	remote.log.manager.copy.quota.window.size.seconds = 1
+	remote.log.manager.expiration.thread.pool.size = 10
+	remote.log.manager.fetch.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.fetch.quota.window.num = 11
+	remote.log.manager.fetch.quota.window.size.seconds = 1
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.custom.metadata.max.bytes = 128
+	remote.log.metadata.manager.class.name = org.apache.kafka.server.log.remote.metadata.storage.TopicBasedRemoteLogMetadataManager
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = rlmm.config.
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = rsm.config.
+	remote.log.storage.system.enable = false
+ (org.apache.kafka.server.log.remote.storage.RemoteLogManagerConfig)
+[2025-03-22 18:32:15,323] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2025-03-22 18:32:15,326] INFO starting (kafka.server.KafkaServer)
+[2025-03-22 18:32:15,327] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2025-03-22 18:32:15,406] INFO [ZooKeeperClient Kafka server] Initializing a new session to localhost:2181. (kafka.zookeeper.ZooKeeperClient)
+[2025-03-22 18:32:15,420] INFO Client environment:zookeeper.version=3.8.4-9316c2a7a97e1666d8f4593f34dd6fc36ecc436c, built on 2024-02-12 22:16 UTC (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,420] INFO Client environment:host.name=hadoop-master.us-central1-c.c.thermal-scene-446819-t2.internal (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,420] INFO Client environment:java.version=11.0.26 (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,420] INFO Client environment:java.vendor=Ubuntu (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,420] INFO Client environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64 (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,420] INFO Client environment:java.class.path=/home/tejasjay94/kafka/bin/../libs/activation-1.1.1.jar:/home/tejasjay94/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/tejasjay94/kafka/bin/../libs/argparse4j-0.7.0.jar:/home/tejasjay94/kafka/bin/../libs/audience-annotations-0.12.0.jar:/home/tejasjay94/kafka/bin/../libs/caffeine-2.9.3.jar:/home/tejasjay94/kafka/bin/../libs/checker-qual-3.19.0.jar:/home/tejasjay94/kafka/bin/../libs/commons-beanutils-1.9.4.jar:/home/tejasjay94/kafka/bin/../libs/commons-cli-1.4.jar:/home/tejasjay94/kafka/bin/../libs/commons-collections-3.2.2.jar:/home/tejasjay94/kafka/bin/../libs/commons-digester-2.1.jar:/home/tejasjay94/kafka/bin/../libs/commons-io-2.14.0.jar:/home/tejasjay94/kafka/bin/../libs/commons-lang3-3.12.0.jar:/home/tejasjay94/kafka/bin/../libs/commons-logging-1.2.jar:/home/tejasjay94/kafka/bin/../libs/commons-validator-1.7.jar:/home/tejasjay94/kafka/bin/../libs/connect-api-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-basic-auth-extension-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-json-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-mirror-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-mirror-client-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-runtime-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/connect-transforms-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/error_prone_annotations-2.10.0.jar:/home/tejasjay94/kafka/bin/../libs/hk2-api-2.6.1.jar:/home/tejasjay94/kafka/bin/../libs/hk2-locator-2.6.1.jar:/home/tejasjay94/kafka/bin/../libs/hk2-utils-2.6.1.jar:/home/tejasjay94/kafka/bin/../libs/jackson-annotations-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-core-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-databind-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-dataformat-csv-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-datatype-jdk8-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-jaxrs-base-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-jaxrs-json-provider-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-module-afterburner-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-module-jaxb-annotations-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jackson-module-scala_2.13-2.16.2.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/tejasjay94/kafka/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/tejasjay94/kafka/bin/../libs/javassist-3.29.2-GA.jar:/home/tejasjay94/kafka/bin/../libs/javax.activation-api-1.2.0.jar:/home/tejasjay94/kafka/bin/../libs/javax.annotation-api-1.3.2.jar:/home/tejasjay94/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/home/tejasjay94/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/tejasjay94/kafka/bin/../libs/jaxb-api-2.3.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-client-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-common-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-container-servlet-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-container-servlet-core-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-hk2-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jersey-server-2.39.1.jar:/home/tejasjay94/kafka/bin/../libs/jetty-client-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-continuation-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-http-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-io-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-security-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-server-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-servlet-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-servlets-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-util-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jetty-util-ajax-9.4.56.v20240826.jar:/home/tejasjay94/kafka/bin/../libs/jline-3.25.1.jar:/home/tejasjay94/kafka/bin/../libs/jopt-simple-5.0.4.jar:/home/tejasjay94/kafka/bin/../libs/jose4j-0.9.4.jar:/home/tejasjay94/kafka/bin/../libs/jsr305-3.0.2.jar:/home/tejasjay94/kafka/bin/../libs/kafka-clients-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-group-coordinator-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-group-coordinator-api-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-log4j-appender-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-metadata-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-raft-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-server-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-server-common-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-shell-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-storage-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-storage-api-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-streams-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-streams-examples-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-streams-scala_2.13-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-streams-test-utils-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-tools-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-tools-api-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka-transaction-coordinator-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/kafka_2.13-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/lz4-java-1.8.0.jar:/home/tejasjay94/kafka/bin/../libs/maven-artifact-3.9.6.jar:/home/tejasjay94/kafka/bin/../libs/metrics-core-2.2.0.jar:/home/tejasjay94/kafka/bin/../libs/metrics-core-4.1.12.1.jar:/home/tejasjay94/kafka/bin/../libs/netty-buffer-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-codec-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-common-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-handler-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-resolver-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-transport-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-transport-classes-epoll-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-transport-native-epoll-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/netty-transport-native-unix-common-4.1.110.Final.jar:/home/tejasjay94/kafka/bin/../libs/opentelemetry-proto-1.0.0-alpha.jar:/home/tejasjay94/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/tejasjay94/kafka/bin/../libs/paranamer-2.8.jar:/home/tejasjay94/kafka/bin/../libs/pcollections-4.0.1.jar:/home/tejasjay94/kafka/bin/../libs/plexus-utils-3.5.1.jar:/home/tejasjay94/kafka/bin/../libs/protobuf-java-3.25.5.jar:/home/tejasjay94/kafka/bin/../libs/reflections-0.10.2.jar:/home/tejasjay94/kafka/bin/../libs/reload4j-1.2.25.jar:/home/tejasjay94/kafka/bin/../libs/rocksdbjni-7.9.2.jar:/home/tejasjay94/kafka/bin/../libs/scala-collection-compat_2.13-2.10.0.jar:/home/tejasjay94/kafka/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/tejasjay94/kafka/bin/../libs/scala-library-2.13.14.jar:/home/tejasjay94/kafka/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/tejasjay94/kafka/bin/../libs/scala-reflect-2.13.14.jar:/home/tejasjay94/kafka/bin/../libs/slf4j-api-1.7.36.jar:/home/tejasjay94/kafka/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/tejasjay94/kafka/bin/../libs/snappy-java-1.1.10.5.jar:/home/tejasjay94/kafka/bin/../libs/swagger-annotations-2.2.8.jar:/home/tejasjay94/kafka/bin/../libs/trogdor-3.8.1.jar:/home/tejasjay94/kafka/bin/../libs/zookeeper-3.8.4.jar:/home/tejasjay94/kafka/bin/../libs/zookeeper-jute-3.8.4.jar:/home/tejasjay94/kafka/bin/../libs/zstd-jni-1.5.6-4.jar (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:os.version=6.8.0-1025-gcp (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:user.name=tejasjay94 (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:user.home=/home/tejasjay94 (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:user.dir=/home/tejasjay94/kafka_flink (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:os.memory.free=1008MB (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:os.memory.max=1024MB (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,421] INFO Client environment:os.memory.total=1024MB (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,426] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=18000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@52815fa3 (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:15,431] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+[2025-03-22 18:32:15,494] INFO zookeeper.request.timeout value is 0. feature enabled=false (org.apache.zookeeper.ClientCnxn)
+[2025-03-22 18:32:15,497] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2025-03-22 18:32:15,502] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2025-03-22 18:32:15,512] INFO Socket connection established, initiating session, client: /127.0.0.1:48218, server: localhost/127.0.0.1:2181 (org.apache.zookeeper.ClientCnxn)
+[2025-03-22 18:32:15,541] INFO Creating new log file: log.c6d (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2025-03-22 18:32:15,556] INFO Session establishment complete on server localhost/127.0.0.1:2181, session id = 0x10000c1a3880000, negotiated timeout = 18000 (org.apache.zookeeper.ClientCnxn)
+[2025-03-22 18:32:15,562] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2025-03-22 18:32:16,443] INFO Cluster ID = ohuRa-LVRUibpTFylZwGKA (kafka.server.KafkaServer)
+[2025-03-22 18:32:16,455] INFO RemoteLogManagerConfig values: 
+	log.local.retention.bytes = -2
+	log.local.retention.ms = -2
+	remote.fetch.max.wait.ms = 500
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.copier.thread.pool.size = 10
+	remote.log.manager.copy.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.copy.quota.window.num = 11
+	remote.log.manager.copy.quota.window.size.seconds = 1
+	remote.log.manager.expiration.thread.pool.size = 10
+	remote.log.manager.fetch.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.fetch.quota.window.num = 11
+	remote.log.manager.fetch.quota.window.size.seconds = 1
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.custom.metadata.max.bytes = 128
+	remote.log.metadata.manager.class.name = org.apache.kafka.server.log.remote.metadata.storage.TopicBasedRemoteLogMetadataManager
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = rlmm.config.
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = rsm.config.
+	remote.log.storage.system.enable = false
+ (org.apache.kafka.server.log.remote.storage.RemoteLogManagerConfig)
+[2025-03-22 18:32:16,597] INFO RemoteLogManagerConfig values: 
+	log.local.retention.bytes = -2
+	log.local.retention.ms = -2
+	remote.fetch.max.wait.ms = 500
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.copier.thread.pool.size = 10
+	remote.log.manager.copy.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.copy.quota.window.num = 11
+	remote.log.manager.copy.quota.window.size.seconds = 1
+	remote.log.manager.expiration.thread.pool.size = 10
+	remote.log.manager.fetch.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.fetch.quota.window.num = 11
+	remote.log.manager.fetch.quota.window.size.seconds = 1
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.custom.metadata.max.bytes = 128
+	remote.log.metadata.manager.class.name = org.apache.kafka.server.log.remote.metadata.storage.TopicBasedRemoteLogMetadataManager
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = rlmm.config.
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = rsm.config.
+	remote.log.storage.system.enable = false
+ (org.apache.kafka.server.log.remote.storage.RemoteLogManagerConfig)
+[2025-03-22 18:32:16,630] INFO KafkaConfig values: 
+	advertised.listeners = PLAINTEXT://localhost:9092,EXTERNAL://34.173.180.7:9093
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.include.jmx.reporter = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = producer
+	compression.zstd.level = 3
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.listener.names = null
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.bootstrap.servers = []
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 1000
+	controller.quorum.fetch.timeout.ms = 2000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = []
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	eligible.leader.replicas.enable = false
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.consumer.assignors = [org.apache.kafka.coordinator.group.assignor.UniformAssignor, org.apache.kafka.coordinator.group.assignor.RangeAssignor]
+	group.consumer.heartbeat.interval.ms = 5000
+	group.consumer.max.heartbeat.interval.ms = 15000
+	group.consumer.max.session.timeout.ms = 60000
+	group.consumer.max.size = 2147483647
+	group.consumer.migration.policy = disabled
+	group.consumer.min.heartbeat.interval.ms = 5000
+	group.consumer.min.session.timeout.ms = 45000
+	group.consumer.session.timeout.ms = 45000
+	group.coordinator.append.linger.ms = 10
+	group.coordinator.new.enable = false
+	group.coordinator.rebalance.protocols = [classic]
+	group.coordinator.threads = 1
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 3.8-IV0
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
+	listeners = PLAINTEXT://0.0.0.0:9092,EXTERNAL://0.0.0.0:9093
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dir.failure.timeout.ms = 30000
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = 1000
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.initial.task.delay.ms = 30000
+	log.local.retention.bytes = -2
+	log.local.retention.ms = -2
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.after.max.ms = 9223372036854775807
+	log.message.timestamp.before.max.ms = 9223372036854775807
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	max.request.partition.size.limit = 2000
+	message.max.bytes = 1048588
+	metadata.log.dir = null
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.max.snapshot.interval.ms = 3600000
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = 104857600
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 0
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = []
+	producer.id.expiration.check.interval.ms = 600000
+	producer.id.expiration.ms = 86400000
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.fetch.max.wait.ms = 500
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.copier.thread.pool.size = 10
+	remote.log.manager.copy.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.copy.quota.window.num = 11
+	remote.log.manager.copy.quota.window.size.seconds = 1
+	remote.log.manager.expiration.thread.pool.size = 10
+	remote.log.manager.fetch.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.fetch.quota.window.num = 11
+	remote.log.manager.fetch.quota.window.size.seconds = 1
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.custom.metadata.max.bytes = 128
+	remote.log.metadata.manager.class.name = org.apache.kafka.server.log.remote.metadata.storage.TopicBasedRemoteLogMetadataManager
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = rlmm.config.
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = rsm.config.
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	server.max.startup.time.ms = 9223372036854775807
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.allow.dn.changes = false
+	ssl.allow.san.changes = false
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	telemetry.max.bytes = 1048576
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.partition.verification.enable = true
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	unstable.api.versions.enable = false
+	unstable.feature.versions.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 18000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.metadata.migration.enable = false
+	zookeeper.metadata.migration.min.batch.size = 200
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+ (kafka.server.KafkaConfig)
+[2025-03-22 18:32:16,635] INFO RemoteLogManagerConfig values: 
+	log.local.retention.bytes = -2
+	log.local.retention.ms = -2
+	remote.fetch.max.wait.ms = 500
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.copier.thread.pool.size = 10
+	remote.log.manager.copy.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.copy.quota.window.num = 11
+	remote.log.manager.copy.quota.window.size.seconds = 1
+	remote.log.manager.expiration.thread.pool.size = 10
+	remote.log.manager.fetch.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.fetch.quota.window.num = 11
+	remote.log.manager.fetch.quota.window.size.seconds = 1
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.custom.metadata.max.bytes = 128
+	remote.log.metadata.manager.class.name = org.apache.kafka.server.log.remote.metadata.storage.TopicBasedRemoteLogMetadataManager
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = rlmm.config.
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = rsm.config.
+	remote.log.storage.system.enable = false
+ (org.apache.kafka.server.log.remote.storage.RemoteLogManagerConfig)
+[2025-03-22 18:32:16,741] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:16,772] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:16,775] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:16,805] INFO [ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:16,964] INFO Loading logs from log dirs ArrayBuffer(/tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:16,990] INFO Skipping recovery of 63 logs from /tmp/kafka-logs since clean shutdown file was found (kafka.log.LogManager)
+[2025-03-22 18:32:17,211] INFO [LogLoader partition=__consumer_offsets-13, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,255] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-13, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=13, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 251ms (1/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,263] INFO [LogLoader partition=__consumer_offsets-14, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,269] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-14, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=14, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 11ms (2/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,282] INFO [LogLoader partition=__consumer_offsets-48, dir=/tmp/kafka-logs] Loading producer state till offset 1168 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,283] INFO [LogLoader partition=__consumer_offsets-48, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 1168 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,283] INFO [ProducerStateManager partition=__consumer_offsets-48] Loading producer state from snapshot file 'SnapshotFile(offset=1168, file=/tmp/kafka-logs/__consumer_offsets-48/00000000000000001168.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:17,297] INFO [LogLoader partition=__consumer_offsets-48, dir=/tmp/kafka-logs] Producer state recovery took 14ms for snapshot load and 0ms for segment recovery from offset 1168 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,305] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-48, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=48, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=1168) with 1 segments, local-log-start-offset 0 and log-end-offset 1168 in 36ms (3/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,315] INFO [LogLoader partition=__consumer_offsets-27, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,320] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-27, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=27, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 14ms (4/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,329] INFO [LogLoader partition=bank_transactions-0, dir=/tmp/kafka-logs] Loading producer state till offset 6321 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,330] INFO [LogLoader partition=bank_transactions-0, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 6321 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,330] INFO [ProducerStateManager partition=bank_transactions-0] Loading producer state from snapshot file 'SnapshotFile(offset=6321, file=/tmp/kafka-logs/bank_transactions-0/00000000000000006321.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:17,330] INFO [LogLoader partition=bank_transactions-0, dir=/tmp/kafka-logs] Producer state recovery took 0ms for snapshot load and 0ms for segment recovery from offset 6321 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,340] INFO Completed load of Log(dir=/tmp/kafka-logs/bank_transactions-0, topicId=GPeoxt8kToiv0Ri-X2CcBg, topic=bank_transactions, partition=0, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=6321) with 1 segments, local-log-start-offset 0 and log-end-offset 6321 in 20ms (5/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,348] INFO [LogLoader partition=__consumer_offsets-33, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,355] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-33, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=33, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 16ms (6/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,375] INFO [LogLoader partition=__consumer_offsets-36, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,383] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-36, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=36, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 27ms (7/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,391] INFO [LogLoader partition=__consumer_offsets-35, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,398] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-35, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=35, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 13ms (8/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,406] INFO [LogLoader partition=__consumer_offsets-18, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,412] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-18, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=18, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 12ms (9/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,422] INFO [LogLoader partition=__consumer_offsets-38, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,430] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-38, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=38, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 17ms (10/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,439] INFO [LogLoader partition=__consumer_offsets-43, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,445] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-43, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=43, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 14ms (11/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,457] INFO [LogLoader partition=blocked_customers-2, dir=/tmp/kafka-logs] Loading producer state till offset 3 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,457] INFO [LogLoader partition=blocked_customers-2, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 3 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,457] INFO [ProducerStateManager partition=blocked_customers-2] Loading producer state from snapshot file 'SnapshotFile(offset=3, file=/tmp/kafka-logs/blocked_customers-2/00000000000000000003.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:17,462] INFO [LogLoader partition=blocked_customers-2, dir=/tmp/kafka-logs] Producer state recovery took 4ms for snapshot load and 1ms for segment recovery from offset 3 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,468] INFO Completed load of Log(dir=/tmp/kafka-logs/blocked_customers-2, topicId=8HAGCXXPTsyK9nXPmz8Uqg, topic=blocked_customers, partition=2, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=3) with 1 segments, local-log-start-offset 0 and log-end-offset 3 in 20ms (12/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,475] INFO [LogLoader partition=__consumer_offsets-4, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,482] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-4, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=4, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 14ms (13/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,490] INFO [LogLoader partition=bank_transactions-1, dir=/tmp/kafka-logs] Loading producer state till offset 6269 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,490] INFO [LogLoader partition=bank_transactions-1, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 6269 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,490] INFO [ProducerStateManager partition=bank_transactions-1] Loading producer state from snapshot file 'SnapshotFile(offset=6269, file=/tmp/kafka-logs/bank_transactions-1/00000000000000006269.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:17,490] INFO [LogLoader partition=bank_transactions-1, dir=/tmp/kafka-logs] Producer state recovery took 0ms for snapshot load and 0ms for segment recovery from offset 6269 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,496] INFO Completed load of Log(dir=/tmp/kafka-logs/bank_transactions-1, topicId=GPeoxt8kToiv0Ri-X2CcBg, topic=bank_transactions, partition=1, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=6269) with 1 segments, local-log-start-offset 0 and log-end-offset 6269 in 13ms (14/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,504] INFO [LogLoader partition=__consumer_offsets-20, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,514] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-20, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=20, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 17ms (15/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,524] INFO [LogLoader partition=__consumer_offsets-2, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,528] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-2, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=2, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 14ms (16/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,537] INFO [LogLoader partition=__consumer_offsets-7, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,541] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-7, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=7, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 12ms (17/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,560] INFO [LogLoader partition=__consumer_offsets-30, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,564] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-30, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=30, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 22ms (18/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,582] INFO [LogLoader partition=fraud_dashboard-2, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,586] INFO Completed load of Log(dir=/tmp/kafka-logs/fraud_dashboard-2, topicId=GreNjd-_Qs2Qy3tHBzlorQ, topic=fraud_dashboard, partition=2, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 20ms (19/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,596] INFO [LogLoader partition=__consumer_offsets-6, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,603] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-6, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=6, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 14ms (20/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,609] INFO [LogLoader partition=bank_transactions-2, dir=/tmp/kafka-logs] Loading producer state till offset 6243 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,611] INFO [LogLoader partition=bank_transactions-2, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 6243 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,611] INFO [ProducerStateManager partition=bank_transactions-2] Loading producer state from snapshot file 'SnapshotFile(offset=6243, file=/tmp/kafka-logs/bank_transactions-2/00000000000000006243.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:17,612] INFO [LogLoader partition=bank_transactions-2, dir=/tmp/kafka-logs] Producer state recovery took 1ms for snapshot load and 0ms for segment recovery from offset 6243 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,615] INFO Completed load of Log(dir=/tmp/kafka-logs/bank_transactions-2, topicId=GPeoxt8kToiv0Ri-X2CcBg, topic=bank_transactions, partition=2, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=6243) with 1 segments, local-log-start-offset 0 and log-end-offset 6243 in 12ms (21/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,656] INFO [LogLoader partition=fraud_dashboard-1, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,662] INFO Completed load of Log(dir=/tmp/kafka-logs/fraud_dashboard-1, topicId=GreNjd-_Qs2Qy3tHBzlorQ, topic=fraud_dashboard, partition=1, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 46ms (22/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,672] INFO [LogLoader partition=__consumer_offsets-9, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,675] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-9, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=9, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 12ms (23/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,690] INFO [LogLoader partition=__consumer_offsets-3, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,693] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-3, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=3, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 17ms (24/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,697] INFO [LogLoader partition=__consumer_offsets-10, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,699] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-10, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=10, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 5ms (25/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,708] INFO [LogLoader partition=customer_risk-0, dir=/tmp/kafka-logs] Loading producer state till offset 9755 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,708] INFO [LogLoader partition=customer_risk-0, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 9755 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,708] INFO [ProducerStateManager partition=customer_risk-0] Loading producer state from snapshot file 'SnapshotFile(offset=9755, file=/tmp/kafka-logs/customer_risk-0/00000000000000009755.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:17,708] INFO [LogLoader partition=customer_risk-0, dir=/tmp/kafka-logs] Producer state recovery took 0ms for snapshot load and 0ms for segment recovery from offset 9755 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,713] INFO Completed load of Log(dir=/tmp/kafka-logs/customer_risk-0, topicId=58pSAjKBQ8aYVnTzavVt4A, topic=customer_risk, partition=0, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=9755) with 1 segments, local-log-start-offset 0 and log-end-offset 9755 in 12ms (26/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,720] INFO [LogLoader partition=__consumer_offsets-15, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,723] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-15, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=15, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 7ms (27/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,731] INFO [LogLoader partition=__consumer_offsets-47, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,736] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-47, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=47, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 12ms (28/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,749] INFO [LogLoader partition=fraud_dashboard-0, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,752] INFO Completed load of Log(dir=/tmp/kafka-logs/fraud_dashboard-0, topicId=GreNjd-_Qs2Qy3tHBzlorQ, topic=fraud_dashboard, partition=0, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 14ms (29/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,760] INFO [LogLoader partition=__consumer_offsets-17, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,765] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-17, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=17, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 10ms (30/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,771] INFO [LogLoader partition=__consumer_offsets-40, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,776] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-40, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=40, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 10ms (31/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,787] INFO [LogLoader partition=__consumer_offsets-37, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,789] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-37, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=37, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 11ms (32/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,795] INFO [LogLoader partition=__consumer_offsets-11, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,797] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-11, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=11, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 7ms (33/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,807] INFO [LogLoader partition=__consumer_offsets-31, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,811] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-31, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=31, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 14ms (34/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,818] INFO [LogLoader partition=customer_risk-2, dir=/tmp/kafka-logs] Loading producer state till offset 9637 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,818] INFO [LogLoader partition=customer_risk-2, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 9637 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,819] INFO [ProducerStateManager partition=customer_risk-2] Loading producer state from snapshot file 'SnapshotFile(offset=9637, file=/tmp/kafka-logs/customer_risk-2/00000000000000009637.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:17,820] INFO [LogLoader partition=customer_risk-2, dir=/tmp/kafka-logs] Producer state recovery took 0ms for snapshot load and 0ms for segment recovery from offset 9637 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,822] INFO Completed load of Log(dir=/tmp/kafka-logs/customer_risk-2, topicId=58pSAjKBQ8aYVnTzavVt4A, topic=customer_risk, partition=2, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=9637) with 1 segments, local-log-start-offset 0 and log-end-offset 9637 in 10ms (35/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,827] INFO [LogLoader partition=__consumer_offsets-34, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,831] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-34, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=34, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 8ms (36/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,839] INFO [LogLoader partition=__consumer_offsets-5, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,842] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-5, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=5, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 10ms (37/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,846] INFO [LogLoader partition=blocked_customers-1, dir=/tmp/kafka-logs] Loading producer state till offset 57 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,846] INFO [LogLoader partition=blocked_customers-1, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 57 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,848] INFO [ProducerStateManager partition=blocked_customers-1] Loading producer state from snapshot file 'SnapshotFile(offset=57, file=/tmp/kafka-logs/blocked_customers-1/00000000000000000057.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:17,848] INFO [LogLoader partition=blocked_customers-1, dir=/tmp/kafka-logs] Producer state recovery took 1ms for snapshot load and 0ms for segment recovery from offset 57 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,851] INFO Completed load of Log(dir=/tmp/kafka-logs/blocked_customers-1, topicId=8HAGCXXPTsyK9nXPmz8Uqg, topic=blocked_customers, partition=1, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=57) with 1 segments, local-log-start-offset 0 and log-end-offset 57 in 8ms (38/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,854] INFO [LogLoader partition=__consumer_offsets-26, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,856] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-26, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=26, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 4ms (39/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,863] INFO [LogLoader partition=__consumer_offsets-42, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,868] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-42, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=42, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 10ms (40/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,872] INFO [LogLoader partition=__consumer_offsets-21, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,874] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-21, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=21, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 5ms (41/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,877] INFO [LogLoader partition=__consumer_offsets-19, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,879] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-19, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=19, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 4ms (42/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,883] INFO [LogLoader partition=__consumer_offsets-49, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,885] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-49, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=49, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 6ms (43/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,889] INFO [LogLoader partition=__consumer_offsets-29, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,893] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-29, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=29, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 7ms (44/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,896] INFO [LogLoader partition=__consumer_offsets-0, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,899] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-0, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=0, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 6ms (45/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,906] INFO [LogLoader partition=__consumer_offsets-45, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,908] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-45, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=45, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 7ms (46/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,917] INFO [LogLoader partition=__consumer_offsets-1, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,920] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-1, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=1, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 10ms (47/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,923] INFO [LogLoader partition=__consumer_offsets-23, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,925] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-23, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=23, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 6ms (48/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,931] INFO [LogLoader partition=blocker_customers-0, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,934] INFO Completed load of Log(dir=/tmp/kafka-logs/blocker_customers-0, topicId=m4mAhETjT92saM2n8BtUrw, topic=blocker_customers, partition=0, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 8ms (49/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,942] INFO [LogLoader partition=__consumer_offsets-44, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,947] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-44, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=44, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 13ms (50/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,954] INFO [LogLoader partition=__consumer_offsets-8, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,958] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-8, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=8, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 10ms (51/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,961] INFO [LogLoader partition=customer_risk-1, dir=/tmp/kafka-logs] Loading producer state till offset 9814 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,961] INFO [LogLoader partition=customer_risk-1, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 9814 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,962] INFO [ProducerStateManager partition=customer_risk-1] Loading producer state from snapshot file 'SnapshotFile(offset=9814, file=/tmp/kafka-logs/customer_risk-1/00000000000000009814.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:17,962] INFO [LogLoader partition=customer_risk-1, dir=/tmp/kafka-logs] Producer state recovery took 0ms for snapshot load and 0ms for segment recovery from offset 9814 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,965] INFO Completed load of Log(dir=/tmp/kafka-logs/customer_risk-1, topicId=58pSAjKBQ8aYVnTzavVt4A, topic=customer_risk, partition=1, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=9814) with 1 segments, local-log-start-offset 0 and log-end-offset 9814 in 7ms (52/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,969] INFO [LogLoader partition=__consumer_offsets-12, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,972] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-12, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=12, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 6ms (53/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,975] INFO [LogLoader partition=__consumer_offsets-25, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,977] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-25, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=25, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 4ms (54/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,983] INFO [LogLoader partition=__consumer_offsets-24, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,987] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-24, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=24, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 9ms (55/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:17,994] INFO [LogLoader partition=blocked_customers-0, dir=/tmp/kafka-logs] Loading producer state till offset 114 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,994] INFO [LogLoader partition=blocked_customers-0, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 114 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,995] INFO [ProducerStateManager partition=blocked_customers-0] Loading producer state from snapshot file 'SnapshotFile(offset=114, file=/tmp/kafka-logs/blocked_customers-0/00000000000000000114.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:17,996] INFO [LogLoader partition=blocked_customers-0, dir=/tmp/kafka-logs] Producer state recovery took 1ms for snapshot load and 0ms for segment recovery from offset 114 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:17,998] INFO Completed load of Log(dir=/tmp/kafka-logs/blocked_customers-0, topicId=8HAGCXXPTsyK9nXPmz8Uqg, topic=blocked_customers, partition=0, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=114) with 1 segments, local-log-start-offset 0 and log-end-offset 114 in 10ms (56/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:18,001] INFO [LogLoader partition=__consumer_offsets-46, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:18,005] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-46, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=46, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 7ms (57/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:18,012] INFO [LogLoader partition=__consumer_offsets-16, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:18,015] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-16, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=16, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 8ms (58/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:18,024] INFO [LogLoader partition=__consumer_offsets-28, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:18,025] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-28, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=28, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 9ms (59/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:18,029] INFO [LogLoader partition=__consumer_offsets-22, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:18,031] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-22, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=22, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 5ms (60/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:18,038] INFO [LogLoader partition=__consumer_offsets-41, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:18,043] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-41, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=41, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 12ms (61/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:18,056] INFO [LogLoader partition=__consumer_offsets-39, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:18,058] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-39, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=39, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments, local-log-start-offset 0 and log-end-offset 0 in 13ms (62/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:18,062] INFO [LogLoader partition=__consumer_offsets-32, dir=/tmp/kafka-logs] Loading producer state till offset 1156 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:18,062] INFO [LogLoader partition=__consumer_offsets-32, dir=/tmp/kafka-logs] Reloading from producer snapshot and rebuilding producer state from offset 1156 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:18,062] INFO [ProducerStateManager partition=__consumer_offsets-32] Loading producer state from snapshot file 'SnapshotFile(offset=1156, file=/tmp/kafka-logs/__consumer_offsets-32/00000000000000001156.snapshot)' (org.apache.kafka.storage.internals.log.ProducerStateManager)
+[2025-03-22 18:32:18,062] INFO [LogLoader partition=__consumer_offsets-32, dir=/tmp/kafka-logs] Producer state recovery took 0ms for snapshot load and 0ms for segment recovery from offset 1156 (kafka.log.UnifiedLog$)
+[2025-03-22 18:32:18,066] INFO Completed load of Log(dir=/tmp/kafka-logs/__consumer_offsets-32, topicId=vO8q5lwTT72dqfYas2S4Gg, topic=__consumer_offsets, partition=32, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=1156) with 1 segments, local-log-start-offset 0 and log-end-offset 1156 in 8ms (63/63 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2025-03-22 18:32:18,072] INFO Loaded 63 logs in 1107ms (kafka.log.LogManager)
+[2025-03-22 18:32:18,077] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2025-03-22 18:32:18,078] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2025-03-22 18:32:18,225] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner$CleanerThread)
+[2025-03-22 18:32:18,274] INFO [feature-zk-node-event-process-thread]: Starting (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2025-03-22 18:32:18,370] INFO [MetadataCache brokerId=0] Updated cache from existing None to latest Features(metadataVersion=3.8-IV0, finalizedFeatures={}, finalizedFeaturesEpoch=0). (kafka.server.metadata.ZkMetadataCache)
+[2025-03-22 18:32:18,442] INFO [zk-broker-0-to-controller-forwarding-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+[2025-03-22 18:32:19,116] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2025-03-22 18:32:19,143] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Created data-plane acceptor and processors for endpoint : ListenerName(PLAINTEXT) (kafka.network.SocketServer)
+[2025-03-22 18:32:19,143] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2025-03-22 18:32:19,152] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Created data-plane acceptor and processors for endpoint : ListenerName(EXTERNAL) (kafka.network.SocketServer)
+[2025-03-22 18:32:19,161] INFO [zk-broker-0-to-controller-alter-partition-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+[2025-03-22 18:32:19,302] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,304] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,307] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,308] INFO [ExpirationReaper-0-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,310] INFO [ExpirationReaper-0-RemoteFetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,330] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2025-03-22 18:32:19,331] INFO [AddPartitionsToTxnSenderThread-0]: Starting (kafka.server.AddPartitionsToTxnManager)
+[2025-03-22 18:32:19,448] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.zk.KafkaZkClient)
+[2025-03-22 18:32:19,496] ERROR Error while creating ephemeral at /brokers/ids/0, node already exists and owner '0x100009e0b180000' does not match current session '0x10000c1a3880000' (kafka.zk.KafkaZkClient$CheckedEphemeral)
+[2025-03-22 18:32:19,504] ERROR [KafkaServer id=0] Fatal error during KafkaServer startup. Prepare to shutdown (kafka.server.KafkaServer)
+org.apache.zookeeper.KeeperException$NodeExistsException: KeeperErrorCode = NodeExists
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:126)
+	at kafka.zk.KafkaZkClient$CheckedEphemeral.getAfterNodeExists(KafkaZkClient.scala:2239)
+	at kafka.zk.KafkaZkClient$CheckedEphemeral.create(KafkaZkClient.scala:2177)
+	at kafka.zk.KafkaZkClient.checkedEphemeralCreate(KafkaZkClient.scala:2144)
+	at kafka.zk.KafkaZkClient.registerBroker(KafkaZkClient.scala:111)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:405)
+	at kafka.Kafka$.main(Kafka.scala:112)
+	at kafka.Kafka.main(Kafka.scala)
+[2025-03-22 18:32:19,507] INFO [KafkaServer id=0] shutting down (kafka.server.KafkaServer)
+[2025-03-22 18:32:19,508] INFO Expiring session 0x100009e0b180000, timeout of 18000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-22 18:32:19,509] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Stopping socket server request processors (kafka.network.SocketServer)
+[2025-03-22 18:32:19,515] ERROR  (kafka.network.DataPlaneAcceptor)
+java.lang.NullPointerException
+	at kafka.network.Acceptor.$anonfun$closeAll$2(SocketServer.scala:712)
+	at kafka.utils.CoreUtils$.swallow(CoreUtils.scala:68)
+	at kafka.network.Acceptor.closeAll(SocketServer.scala:712)
+	at kafka.network.Acceptor.close(SocketServer.scala:679)
+	at kafka.network.SocketServer.$anonfun$stopProcessingRequests$4(SocketServer.scala:288)
+	at kafka.network.SocketServer.$anonfun$stopProcessingRequests$4$adapted(SocketServer.scala:288)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at kafka.network.SocketServer.stopProcessingRequests(SocketServer.scala:288)
+	at kafka.server.KafkaServer.$anonfun$shutdown$4(KafkaServer.scala:991)
+	at kafka.utils.CoreUtils$.swallow(CoreUtils.scala:68)
+	at kafka.server.KafkaServer.shutdown(KafkaServer.scala:991)
+	at kafka.server.KafkaBroker.shutdown(KafkaBroker.scala:99)
+	at kafka.server.KafkaBroker.shutdown$(KafkaBroker.scala:99)
+	at kafka.server.KafkaServer.shutdown(KafkaServer.scala:111)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:673)
+	at kafka.Kafka$.main(Kafka.scala:112)
+	at kafka.Kafka.main(Kafka.scala)
+[2025-03-22 18:32:19,523] ERROR  (kafka.network.DataPlaneAcceptor)
+java.lang.NullPointerException
+	at kafka.network.Acceptor.$anonfun$closeAll$2(SocketServer.scala:712)
+	at kafka.utils.CoreUtils$.swallow(CoreUtils.scala:68)
+	at kafka.network.Acceptor.closeAll(SocketServer.scala:712)
+	at kafka.network.Acceptor.close(SocketServer.scala:679)
+	at kafka.network.SocketServer.$anonfun$stopProcessingRequests$4(SocketServer.scala:288)
+	at kafka.network.SocketServer.$anonfun$stopProcessingRequests$4$adapted(SocketServer.scala:288)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at kafka.network.SocketServer.stopProcessingRequests(SocketServer.scala:288)
+	at kafka.server.KafkaServer.$anonfun$shutdown$4(KafkaServer.scala:991)
+	at kafka.utils.CoreUtils$.swallow(CoreUtils.scala:68)
+	at kafka.server.KafkaServer.shutdown(KafkaServer.scala:991)
+	at kafka.server.KafkaBroker.shutdown(KafkaBroker.scala:99)
+	at kafka.server.KafkaBroker.shutdown$(KafkaBroker.scala:99)
+	at kafka.server.KafkaServer.shutdown(KafkaServer.scala:111)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:673)
+	at kafka.Kafka$.main(Kafka.scala:112)
+	at kafka.Kafka.main(Kafka.scala)
+[2025-03-22 18:32:19,527] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Stopped socket server request processors (kafka.network.SocketServer)
+[2025-03-22 18:32:19,533] INFO [ReplicaManager broker=0] Shutting down (kafka.server.ReplicaManager)
+[2025-03-22 18:32:19,534] INFO [LogDirFailureHandler]: Shutting down (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2025-03-22 18:32:19,534] INFO [LogDirFailureHandler]: Stopped (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2025-03-22 18:32:19,535] INFO [LogDirFailureHandler]: Shutdown completed (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2025-03-22 18:32:19,536] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2025-03-22 18:32:19,539] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2025-03-22 18:32:19,540] INFO [ReplicaAlterLogDirsManager on broker 0] shutting down (kafka.server.ReplicaAlterLogDirsManager)
+[2025-03-22 18:32:19,541] INFO [ReplicaAlterLogDirsManager on broker 0] shutdown completed (kafka.server.ReplicaAlterLogDirsManager)
+[2025-03-22 18:32:19,541] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,544] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,544] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,546] INFO [ExpirationReaper-0-RemoteFetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,547] INFO [ExpirationReaper-0-RemoteFetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,547] INFO [ExpirationReaper-0-RemoteFetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,548] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,549] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,550] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,551] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,552] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,553] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,553] INFO [ExpirationReaper-0-ElectLeader]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,555] INFO [ExpirationReaper-0-ElectLeader]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,555] INFO [ExpirationReaper-0-ElectLeader]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-03-22 18:32:19,567] INFO [AddPartitionsToTxnSenderThread-0]: Shutting down (kafka.server.AddPartitionsToTxnManager)
+[2025-03-22 18:32:19,568] INFO [AddPartitionsToTxnSenderThread-0]: Stopped (kafka.server.AddPartitionsToTxnManager)
+[2025-03-22 18:32:19,570] INFO [AddPartitionsToTxnSenderThread-0]: Shutdown completed (kafka.server.AddPartitionsToTxnManager)
+[2025-03-22 18:32:19,571] INFO [ReplicaManager broker=0] Shut down completely (kafka.server.ReplicaManager)
+[2025-03-22 18:32:19,572] INFO [zk-broker-0-to-controller-alter-partition-channel-manager]: Shutting down (kafka.server.NodeToControllerRequestThread)
+[2025-03-22 18:32:19,572] INFO [zk-broker-0-to-controller-alter-partition-channel-manager]: Stopped (kafka.server.NodeToControllerRequestThread)
+[2025-03-22 18:32:19,575] INFO [zk-broker-0-to-controller-alter-partition-channel-manager]: Shutdown completed (kafka.server.NodeToControllerRequestThread)
+[2025-03-22 18:32:19,577] INFO Node to controller channel manager for alter-partition shutdown (kafka.server.NodeToControllerChannelManagerImpl)
+[2025-03-22 18:32:19,579] INFO [zk-broker-0-to-controller-forwarding-channel-manager]: Shutting down (kafka.server.NodeToControllerRequestThread)
+[2025-03-22 18:32:19,581] INFO [zk-broker-0-to-controller-forwarding-channel-manager]: Stopped (kafka.server.NodeToControllerRequestThread)
+[2025-03-22 18:32:19,581] INFO [zk-broker-0-to-controller-forwarding-channel-manager]: Shutdown completed (kafka.server.NodeToControllerRequestThread)
+[2025-03-22 18:32:19,582] INFO Node to controller channel manager for forwarding shutdown (kafka.server.NodeToControllerChannelManagerImpl)
+[2025-03-22 18:32:19,583] INFO Shutting down. (kafka.log.LogManager)
+[2025-03-22 18:32:19,591] INFO [kafka-log-cleaner-thread-0]: Shutting down (kafka.log.LogCleaner$CleanerThread)
+[2025-03-22 18:32:19,593] INFO [kafka-log-cleaner-thread-0]: Shutdown completed (kafka.log.LogCleaner$CleanerThread)
+[2025-03-22 18:32:19,594] INFO [kafka-log-cleaner-thread-0]: Stopped (kafka.log.LogCleaner$CleanerThread)
+[2025-03-22 18:32:19,831] INFO Shutdown complete. (kafka.log.LogManager)
+[2025-03-22 18:32:19,835] INFO [feature-zk-node-event-process-thread]: Shutting down (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2025-03-22 18:32:19,835] INFO [feature-zk-node-event-process-thread]: Stopped (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2025-03-22 18:32:19,835] INFO [feature-zk-node-event-process-thread]: Shutdown completed (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2025-03-22 18:32:19,836] INFO [ZooKeeperClient Kafka server] Closing. (kafka.zookeeper.ZooKeeperClient)
+[2025-03-22 18:32:19,943] INFO Session: 0x10000c1a3880000 closed (org.apache.zookeeper.ZooKeeper)
+[2025-03-22 18:32:19,943] INFO EventThread shut down for session: 0x10000c1a3880000 (org.apache.zookeeper.ClientCnxn)
+[2025-03-22 18:32:19,945] INFO [ZooKeeperClient Kafka server] Closed. (kafka.zookeeper.ZooKeeperClient)
+[2025-03-22 18:32:19,946] INFO [ThrottledChannelReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,948] INFO [ThrottledChannelReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,948] INFO [ThrottledChannelReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,949] INFO [ThrottledChannelReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,949] INFO [ThrottledChannelReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,949] INFO [ThrottledChannelReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,949] INFO [ThrottledChannelReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,949] INFO [ThrottledChannelReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,949] INFO [ThrottledChannelReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,950] INFO [ThrottledChannelReaper-ControllerMutation]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,950] INFO [ThrottledChannelReaper-ControllerMutation]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,950] INFO [ThrottledChannelReaper-ControllerMutation]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-03-22 18:32:19,952] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Shutting down socket server (kafka.network.SocketServer)
+[2025-03-22 18:32:19,986] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Shutdown completed (kafka.network.SocketServer)
+[2025-03-22 18:32:19,987] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics)
+[2025-03-22 18:32:19,987] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics)
+[2025-03-22 18:32:19,993] INFO Broker and topic stats closed (kafka.server.BrokerTopicStats)
+[2025-03-22 18:32:20,034] INFO App info kafka.server for 0 unregistered (org.apache.kafka.common.utils.AppInfoParser)
+[2025-03-22 18:32:20,035] INFO [KafkaServer id=0] shut down completed (kafka.server.KafkaServer)
+[2025-03-22 18:32:20,035] ERROR Exiting Kafka due to fatal exception during startup. (kafka.Kafka$)
+org.apache.zookeeper.KeeperException$NodeExistsException: KeeperErrorCode = NodeExists
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:126)
+	at kafka.zk.KafkaZkClient$CheckedEphemeral.getAfterNodeExists(KafkaZkClient.scala:2239)
+	at kafka.zk.KafkaZkClient$CheckedEphemeral.create(KafkaZkClient.scala:2177)
+	at kafka.zk.KafkaZkClient.checkedEphemeralCreate(KafkaZkClient.scala:2144)
+	at kafka.zk.KafkaZkClient.registerBroker(KafkaZkClient.scala:111)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:405)
+	at kafka.Kafka$.main(Kafka.scala:112)
+	at kafka.Kafka.main(Kafka.scala)
+[2025-03-22 18:32:20,039] INFO [KafkaServer id=0] shutting down (kafka.server.KafkaServer)
+[2025-03-22 18:32:33,940] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:34,046] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:34,249] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:34,553] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:35,059] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:35,866] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:36,874] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:37,880] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:38,890] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:39,898] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:40,805] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:41,711] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:42,718] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:43,623] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:44,631] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:45,639] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:46,544] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:47,550] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:48,556] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:49,563] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:50,573] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:51,479] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:52,385] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:53,396] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:54,402] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:55,408] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:56,314] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:57,321] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:58,328] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:32:59,335] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:00,340] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:01,349] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:02,356] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:03,362] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:04,429] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:05,334] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:06,339] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:07,245] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:08,251] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:09,157] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:10,063] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:11,070] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:12,076] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:13,081] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:14,087] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:15,093] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:15,999] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:17,006] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:18,012] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:19,018] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:20,024] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:21,032] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:21,937] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:22,841] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:23,746] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:24,753] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:25,759] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:26,765] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:27,571] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:28,578] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:29,583] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:30,588] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:31,595] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:32,601] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:33,607] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:33,839] ERROR org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: listTopics
+ (org.apache.kafka.tools.TopicCommand)
+Deleting topic: Error
+[2025-03-22 18:33:35,892] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:35,999] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:36,204] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:36,406] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:36,810] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:37,716] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:38,623] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:39,631] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:40,537] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:41,544] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:42,552] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:43,559] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:44,565] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:45,370] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:46,277] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:47,286] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:48,091] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:49,097] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:50,105] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:51,112] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:52,119] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:53,026] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:53,933] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:54,939] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:55,947] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:56,955] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:57,963] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:58,870] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:33:59,777] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:00,784] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:01,691] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:02,497] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:03,504] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:04,410] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:05,418] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:06,430] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:07,435] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:08,340] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:09,245] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:10,251] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:11,158] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:12,164] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:13,170] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:14,076] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:14,983] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:15,889] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:16,895] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:17,801] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:18,807] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:19,813] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:20,718] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:21,726] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:22,732] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:23,636] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:24,642] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:25,648] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:26,553] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:27,559] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:28,565] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:29,571] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:30,576] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:31,582] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:32,489] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:33,496] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:34,501] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:35,507] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+Error while executing topic command : Timed out waiting for a node assignment. Call: listTopics
+[2025-03-22 18:34:35,836] ERROR org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: listTopics
+ (org.apache.kafka.tools.TopicCommand)
+Deleting topic: while
+[2025-03-22 18:34:37,917] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:38,030] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:38,132] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:38,334] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:38,738] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:39,746] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:40,755] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:41,764] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:42,772] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:43,780] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:44,788] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:45,797] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:46,805] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:47,813] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:48,621] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:49,630] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:50,637] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:51,544] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:52,451] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:53,457] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:54,364] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:55,271] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:56,176] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:57,082] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:57,988] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:58,895] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:34:59,902] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:00,910] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:01,918] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:02,926] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:03,833] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:04,841] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:05,848] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:06,854] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:07,760] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:08,770] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:09,676] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:10,683] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:11,689] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:12,696] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:13,602] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:14,609] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:15,515] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:16,521] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:17,527] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:18,434] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:19,440] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:20,447] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:21,454] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:22,459] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:23,364] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:24,373] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:25,280] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:26,286] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:27,293] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:28,300] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:29,205] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:30,211] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:31,218] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:32,225] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:33,231] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:34,237] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:35,243] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:36,248] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:37,253] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+Error while executing topic command : Timed out waiting for a node assignment. Call: listTopics
+[2025-03-22 18:35:37,874] ERROR org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: listTopics
+ (org.apache.kafka.tools.TopicCommand)
+Deleting topic: executing
+[2025-03-22 18:35:39,921] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:40,030] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:40,135] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:40,338] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:40,843] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:41,549] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:42,558] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:43,565] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:44,572] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:45,480] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:46,388] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:47,395] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:48,402] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:49,408] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:50,416] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:51,425] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:52,332] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:53,239] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:54,248] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:55,255] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:56,261] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:57,269] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:58,276] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:35:59,182] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:00,088] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:01,096] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:02,103] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:03,109] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:04,114] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:05,122] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:06,129] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:07,135] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:08,042] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:08,948] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:09,962] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:10,768] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:11,775] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:12,780] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:13,786] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:14,793] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:15,799] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:16,805] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:17,811] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:18,818] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:19,823] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:20,828] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:21,833] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:22,838] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:23,844] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:24,749] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:25,655] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:26,562] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:27,467] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:28,474] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:29,480] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:30,486] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:31,491] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:32,497] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:33,502] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:34,407] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:35,413] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:36,420] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:37,427] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:38,433] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:39,338] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+Error while executing topic command : Timed out waiting for a node assignment. Call: listTopics
+[2025-03-22 18:36:39,871] ERROR org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: listTopics
+ (org.apache.kafka.tools.TopicCommand)
+Deleting topic: topic
+[2025-03-22 18:36:41,852] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:41,968] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:42,070] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:42,373] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:42,877] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:43,583] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:44,488] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:45,497] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:46,405] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:47,313] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:48,219] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:49,127] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:50,035] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:51,042] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:52,050] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:53,059] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:54,068] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:54,975] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:55,983] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:56,991] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:57,998] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:36:59,004] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:00,009] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:00,916] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:01,823] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:02,730] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:03,637] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:04,645] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:05,651] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:06,659] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:07,667] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:08,572] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:09,578] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:10,585] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:11,593] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:12,597] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:13,504] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:14,410] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:15,416] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:16,323] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:17,330] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:18,136] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:19,143] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:20,156] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:21,166] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:22,178] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:22,987] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:23,998] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:25,009] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:26,020] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:27,028] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:28,037] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:29,051] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:30,058] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:31,064] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:32,070] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:33,075] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:33,981] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:34,887] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:35,893] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:36,899] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:37,904] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:38,910] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:39,917] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:40,822] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:41,726] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+Error while executing topic command : Timed out waiting for a node assignment. Call: listTopics
+[2025-03-22 18:37:41,801] ERROR org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: listTopics
+ (org.apache.kafka.tools.TopicCommand)
+Deleting topic: command
+[2025-03-22 18:37:43,873] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:43,985] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:44,091] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:44,394] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:44,799] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:45,707] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:46,613] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:47,622] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:48,530] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:49,539] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:50,546] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:51,552] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:52,558] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:53,464] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:54,472] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:55,482] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:56,388] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:57,396] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:58,302] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:37:59,309] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
+[2025-03-22 18:38:00,316] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient)
