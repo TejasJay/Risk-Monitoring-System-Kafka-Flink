@@ -10,63 +10,76 @@ This project simulates bank transactions, detects fraudulent activities, visuali
 
 ```mermaid
 flowchart TD
-
-  subgraph Simulator [Simulation Engine]
-    A1[transaction_producer.py]\n(Faker + Randomizer)
-    A1 -->|Produces JSON events| K1(Kafka Topic: bank_transactions)
+  %% GROUP: System Boot
+  subgraph System_Startup
+    A1[Start Script: automate.sh]
+    A2[Start Zookeeper]
+    A3[Start Kafka Broker]
+    A4[Create/Delete Topics]
+    A5[Start Flink Cluster]
+    A6[Start Elasticsearch]
+    A7[Fix Cluster Health]
+    A8[Start Kibana]
+    A9[Import Saved Visualizations]
   end
 
-  subgraph Kafka [Kafka Topics]
-    K1 -->|Consumed| F1[flink SQL Job: Transactions]
-    K1 -->|Consumed| F2[fraud_alert_consumer.py]
-    K1 -->|Consumed| F3[TransactionsWithEventTime - ETL]
-    F1 --> K2(Kafka Topic: customer_risk)
-    F1 --> K3(Kafka Topic: blocked_customers)
-    F1 --> K4(Kafka Topic: fraud_dashboard)
+  %% GROUP: Kafka Input Pipeline
+  subgraph Log_Generators [Transaction Simulation]
+    B1[transaction_producer.py<br>Faker + Random]
+    B2[Kafka Topic: bank_transactions]
   end
 
-  subgraph Flink [Flink SQL Layer]
-    F3 -->|Processed| F1
+  %% GROUP: Flink SQL
+  subgraph Flink_Analytics [Apache Flink]
+    C1[fraud_sql_analytics.sql<br>Flink SQL Job]
+    C2[Compute: Risk Matrix, Fraud Dashboard, Blocked Customers]
+    C3[Kafka Topic: customer_risk]
+    C4[Kafka Topic: fraud_dashboard]
+    C5[Kafka Topic: blocked_customers]
   end
 
-  subgraph Consumers [Kafka Consumers]
-    K2 -->|Consumes| E1[to_elastic_customer_risk.py]
-    K3 -->|Consumes| E2[to_elastic_blocked_customers.py]
-    K3 -->|Consumes| W1[fraud_webhook_server.py]
-    K3 -->|Consumes| M1[email_alert_engine.py]
+  %% GROUP: Elasticsearch Ingest
+  subgraph Elastic_Consumers [Kafka → Elasticsearch]
+    D1[to_elastic_customer_risk.py]
+    D2[to_elastic_blocked_customers.py]
+    D3[Index: customer_risk]
+    D4[Index: blocked_customers]
   end
 
-  subgraph Webhook & Alerting
-    W1 -->|Receives JSON| Web[Flask App: Webhook Server]\n/index.html & /get-blocked-customers
-    M1 -->|Sends Email| Mail[SMTP Alert Engine]
+  %% GROUP: Alerting + Webhook
+  subgraph Block Customer in Real-time
+    E1[email_alert_engine.py<br>Email if Txn > $50K]
+    E2[fraud_webhook_server.py<br>Flask + Deque]
+    E3[GET /get-blocked-customers]
+    E4[POST /block-customer]
   end
 
-  subgraph ElasticStack
-    E1 -->|Indexes JSON| ES1[Elasticsearch Index: customer_risk]
-    E2 -->|Indexes JSON| ES2[Elasticsearch Index: blocked_customers]
-    Kibana[Kibana Dashboard]\n(Fraud Monitoring)
-    Kibana -->|Loads Saved Objects| VIS[import_kibana_visuals.py]
-    Kibana -->|Visualizes| ES1
-    Kibana -->|Visualizes| ES2
+  %% GROUP: Kibana
+  subgraph Kibana
+    F1[Dashboard: Fraud Monitoring]
+    F2[customer_risk Visuals]
+    F3[blocked_customers Visuals]
   end
 
-  subgraph Automation
-    Auto[automate.sh] -->|Starts| ZK[Zookeeper]
-    Auto --> KF[Kafka Broker]
-    Auto --> FL[Flink Cluster]
-    Auto --> EL[Elasticsearch]
-    Auto --> KB[Kibana]
-    Auto --> SC[fix_cluster_health.sh]
-    Auto --> VIS
-    Auto --> FLJ[fraud_sql_analytics.sql]
-    Auto --> E1
-    Auto --> E2
-    Auto --> M1
-  end
+  %% Connections
+  A1 --> A2 --> A3 --> A4 --> A5
+  A1 --> A6 --> A7
+  A1 --> A8 --> A9
 
-  click Kibana href "http://localhost:5601" _blank
-  click Web href "http://localhost:5001" _blank
+  A1 --> B1 --> B2
+  B2 --> C1 --> C2
+  C2 --> C3 & C4 & C5
+
+  C3 --> D1 --> D3 --> F2
+  C5 --> D2 --> D4 --> F3
+  D4 --> E1
+  C5 --> E2 --> E4 & E3
+
+  F2 & F3 --> F1
+
 ```
+
+
 
 * * *
 
