@@ -15,11 +15,11 @@ print("🔄 Listening for blocked customer alerts...")
 
 for message in consumer:
     fraud_data = message.value
-    print(f"📬 Received fraud alert: {fraud_data}")
+    # print(f"📬 Received fraud alert: {fraud_data}")
 
     try:
         # Send fraud alert to webhook
         response = requests.post("http://localhost:5001/block-customer", json=fraud_data)
-        print(f"✅ Webhook response: {response.status_code} - {response.json()}")
+        # print(f"✅ Webhook response: {response.status_code} - {response.json()}")
     except Exception as e:
         print(f"❌ Failed to send webhook: {e}")

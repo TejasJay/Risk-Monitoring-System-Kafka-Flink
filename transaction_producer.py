@@ -5,6 +5,7 @@ import re
 from faker import Faker
 from time import sleep
 import json
+from datetime import datetime, timezone
 
 
 
@@ -160,10 +161,10 @@ class BankFraudSimulation:
             self.producer.send("bank_transactions", fraud_checked_data)
             # Print transaction data
             # print(fraud_checked_data)
-            sleep(1)
+            sleep(0.1)
 
 # Example Usage:
-num_customers = 1000  # Adjust as needed
+num_customers = 10000  # Adjust as needed
 fraud_chance = 5  # 5% fraud probability
 
 bank_fraud_sim = BankFraudSimulation(num_customers, fraud_chance)

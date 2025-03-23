@@ -13,7 +13,7 @@ def home():
 @app.route("/block-customer", methods=["POST"])
 def block_customer():
     data = request.json
-    print("⛔ Blocking customer:", data)
+    # print("⛔ Blocking customer:", data)
     
     # Store the blocked customer
     blocked_customers.append(data)
