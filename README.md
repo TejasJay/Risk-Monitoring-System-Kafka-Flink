@@ -178,3 +178,4 @@ bash automate.sh
 -   Imports Kibana saved visualizations
 * * *
 
+![Dashboard](dashboard.jpg)
