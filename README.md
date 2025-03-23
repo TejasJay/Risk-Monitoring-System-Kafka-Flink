@@ -79,7 +79,17 @@ flowchart TD
 
 ```
 
+* * *
+## 🛠️ Full Demo
 
+
+<div>
+    <a href="https://www.loom.com/share/19036a4b13f14051b033a7436376eaed">
+    </a>
+    <a href="https://www.loom.com/share/19036a4b13f14051b033a7436376eaed">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/19036a4b13f14051b033a7436376eaed-8e5b50bbad8ac7c0-full-play.gif">
+    </a>
+  </div>
 
 * * *
 
