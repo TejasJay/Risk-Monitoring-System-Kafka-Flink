@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Function to check if a process is running
+# Function to check if a process is running.
 is_running() {
     pgrep -f "$1" > /dev/null 2>&1
 }
